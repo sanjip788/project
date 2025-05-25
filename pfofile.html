@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Beautiful Team</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      padding: 40px 20px 10px;
+      color: #1f3b73;
+    }
+
+    .scroll-btn {
+      position: fixed;
+      right: 20px;
+      background: #1f3b73;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 999;
+      font-size: 18px;
+      border: none;
+    }
+
+    .scroll-top {
+      bottom: 80px;
+    }
+
+    .scroll-bottom {
+      bottom: 20px;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px 0;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background: linear-gradient(to bottom, #4facfe, #00f2fe);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .entry {
+      padding: 20px 40px;
+      position: relative;
+      width: 50%;
+      box-sizing: border-box;
+    }
+
+    .entry.left {
+      left: 0;
+    }
+
+    .entry.right {
+      left: 50%;
+    }
+
+    .entry::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: white;
+      border: 4px solid #1f3b73;
+      z-index: 1;
+    }
+
+    .entry.left::before {
+      right: -13px;
+    }
+
+    .entry.right::before {
+      left: -13px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      color: #1f3b73;
+      margin: 0 0 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 16px;
+      background: #1f3b73;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: #3d5c9b;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 30px;
+      }
+
+      .entry {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+      }
+
+      .entry.right {
+        left: 0;
+      }
+
+      .entry.left::before,
+      .entry.right::before {
+        left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1 id="top">Meet Our Team</h1>
+
+<div class="timeline">
+
+  <div class="entry left">
+    <div class="card">
+      <img src="picture1.jpg" alt="Yadav Sanjip Kumar">
+      <h2>Yadav Sanjip Kumar</h2>
+      <p>Hi everyone! My name is Yadav Sanjip Kumar, and I'm from Nepal.
+        Right now, I'm studying Enterprise Resource Planning (ERP) at KCGI.
+        Curious to know more about me?</p>
+      <a href="https://sanjip788.github.io/my-profile/" target="_blank">View Profile</a>
+    </div>
+  </div>
+
+  <div class="entry right">
+    <div class="card">
+      <img src="picture2.jpg" alt="Dhungana Juli">
+      <h2>Dhungana Juli</h2>
+      <p>Hi everyone, I'm Dhungana Juli from Nepal.
+        I'm currently pursuing my studies in Enterprise Resource Planning (ERP) at The Kyoto College of Graduate Studies for Informatics (KCGI).
+ 
+        Curious to know more about me? 
+        </p>
+      <a href="https://julidhungana.github.io/jennie/" target="_blank">View Profile</a>
+    </div>
+  </div>
+
+  <div class="entry left">
+    <div class="card">
+      <img src="picture3.jpg" alt="Bogati Bikash">
+      <h2>Bogati Bikash</h2>
+      <p>Hi everyone, I'm Bogati Bikash from Nepal.
+        I'm currently pursuing my studies in Enterprise Resource Planning (ERP) at The Kyoto College of Graduate Studies for Informatics (KCGI).
+        
+        Curious to know more about me?
+        
+        </p>
+      <a href=" https://sanjip788.github.io/bikash-1/" target="_blank">View Profile</a>
+    </div>
+  </div>
+
+  <div class="entry right">
+    <div class="card">
+      <img src="picture4.jpg" alt="Singh Sabina">
+      <h2>Singh Sabina</h2>
+      <p>Hi everyone, I'm Singh Sabina from Nepal.
+        I'm currently pursuing my studies in Enterprise Resource Planning (ERP) at The Kyoto College of Graduate Studies for Informatics (KCGI). 
+        
+        Curious to know more about me?</p>
+      <a href=" https://sanjip788.github.io/sabina-1/" target="_blank">View Profile</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Scroll Buttons -->
+<button class="scroll-btn scroll-top" onclick="scrollToTop()">&#8593;</button>
+<button class="scroll-btn scroll-bottom" onclick="scrollToBottom()">&#8595;</button>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function scrollToBottom() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
